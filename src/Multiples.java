@@ -1,14 +1,11 @@
-/**
- * Solve the FizzBuzz challenge.
- */
-class FizzBuzz {
-
+public class Multiples {
     public static void main(String[] args) {
 
-        int i = 1;
-        while (i < 100) {
 
-        //for (int i = 1; i < 100; i++) {
+        int count = 0;
+
+
+        for (int i = 1; i < 1000; i++) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
@@ -17,23 +14,18 @@ class FizzBuzz {
             // Print our appropriate result.
             if (divisibleBy3 && divisibleBy5) {
 
-                System.out.println("Fizz Buzz");
+                count++;
 
             } else if (divisibleBy3) {
 
-                System.out.println("Fizz");
+                count++;
 
             } else if (divisibleBy5) {
 
-                System.out.println("Buzz");
-
-            } else {
-
-                System.out.println(i);
-
+                count++;
             }
 
-            i++;
         }
+        System.out.println(count);
     }
 }
